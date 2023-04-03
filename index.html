@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Application title -->
+    <title>To-do Application</title>
+    <!-- custom css style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-heading">To-do Application</h1>
+      <form action="" id="new-task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="newTask"
+          placeholder="add your new task here"
+        />
+        <input type="submit" value="Add new task" id="new-task-submit" />
+      </form>
+    </header>
+
+    <main>
+      <section class="task-list">
+        <h2>Task</h2>
+        <!-- task container -->
+        <div class="tasks">
+          <!-- individual task -->
+          <div class="task">
+            <!-- task content -->
+            <div class="task-content">
+              <input type="text" class="text" value="my shiny task" readonly />
+            </div>
+            <!-- task action buttons -->
+            <div class="task-action-btns">
+              <button type="" class="edit">Edit</button>
+              <button type="" class="delete">Delete</button>
+            </div>
+            <!-- end of task action buttons -->
+          </div>
+          <!-- end of individual task -->
+        </div>
+        <div class="deleteAll">
+          <button>Delete All</button>
+        </div>
+        <!-- end of task container -->
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
